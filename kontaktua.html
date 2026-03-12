@@ -8,16 +8,17 @@
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">🏎️ MotorNews</a>
+    <a class="navbar-brand fw-bold text-danger fs-3" href="index.html">🏎️ MotorNews</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="menuNavegacion">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto fw-semibold">
         <li class="nav-item"><a class="nav-link" href="index.html">Hasiera</a></li>
-        <li class="nav-item"><a class="nav-link" href="albisteak.html" target="_blank">Azken Albisteak</a></li>
+        <li class="nav-item"><a class="nav-link" href="f1.html" target="_blank">1 Formula</a></li>
+        <li class="nav-item"><a class="nav-link" href="albisteak.html" target="_blank">Autoak</a></li>
         <li class="nav-item"><a class="nav-link active" href="kontaktua.html">Kontaktua</a></li>
       </ul>
     </div>
@@ -25,24 +26,24 @@
 </nav>
 
 <section class="container py-5 flex-grow-1">
-  <h2 class="text-center mb-4">Jarri gurekin harremanetan</h2>
+  <h2 class="text-center fw-bold mb-4">Jarri gurekin harremanetan</h2>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <div class="card shadow-sm border-0 p-4">
+      <div class="card shadow border-0 p-4 rounded-4">
         <form>
           <div class="mb-3">
-            <label for="izena" class="form-label">Izena</label>
-            <input type="text" class="form-control" id="izena" placeholder="Zure izena">
+            <label for="izena" class="form-label fw-semibold">Izena</label>
+            <input type="text" class="form-control bg-light" id="izena" placeholder="Zure izena">
           </div>
           <div class="mb-3">
-            <label for="posta" class="form-label">Posta elektronikoa</label>
-            <input type="email" class="form-control" id="posta" placeholder="adibidea@posta.com">
+            <label for="posta" class="form-label fw-semibold">Posta elektronikoa</label>
+            <input type="email" class="form-control bg-light" id="posta" placeholder="adibidea@posta.com">
           </div>
           <div class="mb-3">
-            <label for="mezua" class="form-label">Mezua</label>
-            <textarea class="form-control" id="mezua" rows="4" placeholder="Idatzi zure mezua hemen..."></textarea>
+            <label for="mezua" class="form-label fw-semibold">Mezua</label>
+            <textarea class="form-control bg-light" id="mezua" rows="5" placeholder="Idatzi zure mezua hemen..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Bidali</button>
+          <button type="submit" class="btn btn-danger w-100 fw-bold">Bidali Mezua</button>
         </form>
       </div>
     </div>
@@ -51,7 +52,7 @@
 
 <footer class="bg-dark text-white text-center py-4 mt-auto">
   <div class="container">
-    <p class="mb-0">© 2026 MotorNews. Bootstrap praktika.</p>
+    <p class="mb-0">© 2026 MotorNews. SoyMotor estiloa.</p>
   </div>
 </footer>
 
