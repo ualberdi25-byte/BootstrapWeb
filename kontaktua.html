@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorNews - Kontaktua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🏎️ MotorNews</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNavegacion">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Hasiera</a></li>
+        <li class="nav-item"><a class="nav-link" href="albisteak.html" target="_blank">Azken Albisteak</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontaktua.html">Kontaktua</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container py-5 flex-grow-1">
+  <h2 class="text-center mb-4">Jarri gurekin harremanetan</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0 p-4">
+        <form>
+          <div class="mb-3">
+            <label for="izena" class="form-label">Izena</label>
+            <input type="text" class="form-control" id="izena" placeholder="Zure izena">
+          </div>
+          <div class="mb-3">
+            <label for="posta" class="form-label">Posta elektronikoa</label>
+            <input type="email" class="form-control" id="posta" placeholder="adibidea@posta.com">
+          </div>
+          <div class="mb-3">
+            <label for="mezua" class="form-label">Mezua</label>
+            <textarea class="form-control" id="mezua" rows="4" placeholder="Idatzi zure mezua hemen..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Bidali</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-0">© 2026 MotorNews. Bootstrap praktika.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
