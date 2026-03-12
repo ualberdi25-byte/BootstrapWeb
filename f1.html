@@ -8,8 +8,8 @@
     <style>
         /* Efecto al pasar el ratón por encima de la noticia */
         .card:hover { transform: translateY(-5px); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        /* Esto hace que las imágenes tengan el mismo alto y no se deformen */
-        .card-img-top { height: 250px; object-fit: cover; }
+        /* Esto hace que las imágenes tengan el mismo alto (200px) y no se deformen */
+        .card-img-top { height: 200px; object-fit: cover; }
     </style>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -42,10 +42,47 @@
   </div>
   
   <div class="row">
-    <div class="col-md-6 mb-4">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm border-0 rounded-3">
+        <img src="descargar.jpg" class="card-img-top" alt="Charles Leclerc">
+        <div class="card-body">
+          <span class="badge bg-danger mb-2">Gidariak</span>
+          <h5 class="card-title fw-bold">Leclercek garaipena ospatu du</h5>
+          <p class="card-text text-muted">Ferrariko gidariak lasterketa bikaina egin du eta podiumaren gorenera itzuli da, taldearen itxaropenak piztuz.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm border-0 rounded-3">
+        <img src="landscape_hero_web.jpg" class="card-img-top" alt="F1 Pista">
+        <div class="card-body">
+          <span class="badge bg-dark mb-2">Lasterketa</span>
+          <h5 class="card-title fw-bold">Lehia bizia pistan</h5>
+          <p class="card-text text-muted">Asteburuko Sari Nagusiak aurrerapen ikusgarriak utzi dizkigu. Pista berriak ikuskizuna bermatu du.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
       <div class="card h-100 shadow-sm border-0 rounded-3">
         <img src="image_39c361.png" class="card-img-top" alt="F1 Bolantea">
         <div class="card-body">
-          <span class="badge bg-danger mb-2">Taldeak</span>
-          <h4 class="card-title fw-bold">Aerodinamika pakete berriak</h4>
-          <p class="card-text">Hainbat taldek berrikuntza garrantzitsuak ekarriko dituzte hurrengo
+          <span class="badge bg-secondary mb-2">Teknologia</span>
+          <h5 class="card-title fw-bold">Aerodinamika berria</h5>
+          <p class="card-text text-muted">Taldeek berrikuntza garrantzitsuak ekarri dituzte autoen bolanteetan eta pakete aerodinamikoetan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-0">© 2026 MotorNews. SoyMotor estiloa.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
