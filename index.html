@@ -5,37 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotorNews - Hasiera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Pequeño efecto para que las tarjetas se eleven al pasar el ratón */
+        .card:hover { transform: translateY(-5px); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="bg-danger text-white text-center py-2">
+    <small class="text-uppercase fw-bold">🚨 Azken Ordukoa:</small> 
+    <small>1 Formulako araudi berria 2026rako onartu da ofizialki.</small>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">🏎️ MotorNews</a>
+    <a class="navbar-brand fw-bold text-danger fs-3" href="index.html">🏎️ MotorNews</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="menuNavegacion">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto fw-semibold">
         <li class="nav-item"><a class="nav-link active" href="index.html">Hasiera</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="albisteak.html" target="_blank">Azken Albisteak</a></li>
+        <li class="nav-item"><a class="nav-link" href="f1.html" target="_blank">1 Formula</a></li>
+        <li class="nav-item"><a class="nav-link" href="albisteak.html" target="_blank">Autoak</a></li>
         <li class="nav-item"><a class="nav-link" href="kontaktua.html" target="_blank">Kontaktua</a></li>
-        
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="bg-primary text-white text-center py-5 flex-grow-1 d-flex flex-column justify-content-center">
-  <div class="container my-4">
-    <h1 class="display-4 fw-bold">Motorraren gaurkotasun guztia</h1>
-    <p class="lead">Eredu berriak, 1 Formula, auto elektrikoak eta askoz gehiago.</p>
+<main class="container py-4 flex-grow-1">
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="card bg-dark text-white border-0 shadow rounded-4 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1532906546328-91216a6a58dd?auto=format&fit=crop&w=1200&q=80" class="card-img" alt="1 Formula Portada" style="height: 400px; object-fit: cover; opacity: 0.7;">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-5">
+          <span class="badge bg-danger mb-2 align-self-start fs-6">Esklusiboa</span>
+          <h2 class="card-title fw-bold display-5">Sainz eta Alonso, podiumaren bila</h2>
+          <p class="card-text fs-5">Asteburu honetan Monakoko Sari Nagusia jokatuko da eta bi gidariek aukera handiak dituzte.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+
+  <h3 class="fw-bold border-bottom border-danger pb-2 mb-4">Azken Berriak</h3>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm rounded-3">
+        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Auto elektrikoa">
+        <div class="card-body">
+          <span class="text-success fw-bold small text-uppercase">Elektrikoak</span>
+          <h5 class="card-title fw-bold mt-2">Baterien iraultza iritsi da</h5>
+          <p class="card-text text-muted">1.000 km baino gehiagoko autonomia karga bakarrarekin.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm rounded-3">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Kirol-autoa">
+        <div class="card-body">
+          <span class="text-primary fw-bold small text-uppercase">Nobedadeak</span>
+          <h5 class="card-title fw-bold mt-2">V8 motorraren itzulera</h5>
+          <p class="card-text text-muted">Marka alemaniarrak 700 ZP baino gehiagoko motorra aurkeztu du.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm rounded-3">
+        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Auto baten barrualdea">
+        <div class="card-body">
+          <span class="text-info fw-bold small text-uppercase">Teknologia</span>
+          <h5 class="card-title fw-bold mt-2">Gidatze autonomoa</h5>
+          <p class="card-text text-muted">Noiz iritsiko da esku-hartzerik gabeko gidatzea gure errepideetara?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 <footer class="bg-dark text-white text-center py-4 mt-auto">
   <div class="container">
-    <p class="mb-0">© 2026 MotorNews. Bootstrap praktika.</p>
+    <p class="mb-0">© 2026 MotorNews. SoyMotor estiloa - Bootstrap praktika.</p>
   </div>
 </footer>
 
