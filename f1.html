@@ -6,8 +6,10 @@
     <title>MotorNews - 1 Formula</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Pequeño efecto para que las tarjetas se eleven al pasar el ratón, igual que en la portada */
+        /* Efecto al pasar el ratón por encima de la noticia */
         .card:hover { transform: translateY(-5px); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        /* Esto hace que las imágenes tengan el mismo alto y no se deformen */
+        .card-img-top { height: 250px; object-fit: cover; }
     </style>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
@@ -42,34 +44,8 @@
   <div class="row">
     <div class="col-md-6 mb-4">
       <div class="card h-100 shadow-sm border-0 rounded-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/F1_steering_wheel_-_Ferrari_SF70H.jpg/800px-F1_steering_wheel_-_Ferrari_SF70H.jpg" class="card-img-top" alt="F1 Bolantea">
+        <img src="image_39c361.png" class="card-img-top" alt="F1 Bolantea">
         <div class="card-body">
           <span class="badge bg-danger mb-2">Taldeak</span>
           <h4 class="card-title fw-bold">Aerodinamika pakete berriak</h4>
-          <p class="card-text">Hainbat taldek berrikuntza garrantzitsuak ekarriko dituzte hurrengo lasterketarako, segundoko hamarren preziatu horiek irabazteko asmoz.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="card h-100 shadow-sm border-0 rounded-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/F1_2018_test_Barcelona_-_Bottas.jpg/800px-F1_2018_test_Barcelona_-_Bottas.jpg" class="card-img-top" alt="F1 Pista">
-        <div class="card-body">
-          <span class="badge bg-dark mb-2">Egutegia</span>
-          <h4 class="card-title fw-bold">Zirkuitu berria baieztatuta</h4>
-          <p class="card-text">FIAk ofizial egin du: datorren urtean kaleko zirkuitu berri bat estreinatuko da. Gidariek ikusmina agertu dute trazatu azkarraren aurrean.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-dark text-white text-center py-4 mt-auto">
-  <div class="container">
-    <p class="mb-0">© 2026 MotorNews. SoyMotor estiloa.</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <p class="card-text">Hainbat taldek berrikuntza garrantzitsuak ekarriko dituzte hurrengo
